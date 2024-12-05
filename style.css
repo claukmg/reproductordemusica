@@ -1,0 +1,141 @@
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+    padding: unset;
+    margin: unset;
+    border: unset;
+    outline: unset;
+
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: url('/assets/body.jpg');
+    padding: 30px;
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+
+
+.background-blur {
+    backdrop-filter: blur(4px);
+    background-color: #FFFFFF70;
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
+.background__header__barra {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    align-items:center;
+    justify-content: space-between;
+    padding: 33px 60px 0px;
+
+
+}
+
+.background__header__barra__titulo {
+    display: flex;
+    font-size: 32px;
+    color: #708BA8;
+    font-weight: bold;
+    padding: 0px 80px;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+
+}
+
+.background__header__barra__titulo__nav {
+    display: flex;
+    gap: 190px;
+    border-radius: 15px;
+    padding:10px 20px 10px;
+    background-color: black;
+    align-items:center;
+    justify-content: flex-end;
+
+}
+
+.backgrodund__header__barra__titulo__nav__texto {
+    font-size: 16px;
+
+}
+
+.playlist__canciones__canciones__cancion__foto {
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+
+}
+
+.playlist__canciones__canciones {
+    display: flex;
+    padding: 40px 32px 0px;
+    width: 582px;
+    height: 80px;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.playlist__canciones__canciones__cancion{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 20px 32px ;
+    width: 582px;
+
+}
+.playlist__canciones__canciones__cancion__tituloyautor__titulo {
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+
+.reproductor {
+    display: flex;
+    padding: 0px 300px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.reproductor__imagen {
+    border-radius: 100%;
+    width: 374px;
+    height: 374px;
+
+
+}
+.reproductor__tituloyautor {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.reproductor__tituloyautor__titulo{
+    font-weight: bold;
+}
+
+.reproductor__iconos {
+    display: flex;
+    padding: 0px 0px 50px;
+    gap: 55px;
+}
