@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loopzz</title>
     <link rel="stylesheet" href="style.css">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body class="body">
     <div class="background-blur">
-        <header class="background__header">
-            <div class="background__header__barra">
-                <h1 class="background__header__barra__titulo">Loop</h1>
-                    <nav class="background__header__barra__titulo__nav">
-                        <p class="background__header__barra__titulo__nav__texto">Buscar canción</p>
-                            <img src="assets/img (26).svg" alt="">
-                    </nav>
-            </div>
+        <header class="header">
+            <nav class="header__barra">
+                <h1 class="header__barra__titulo">Loop</h1>
+                <form class="header__barra__titulo__nav" action="/" method="get">
+                    <input type="text" class="header__barra__titulo__nav__texto" placeholder="Buscar canción...">
+                    <!-- <p class="header__barra__titulo__nav__texto">Buscar canción</p> -->
+                    <img src="assets/img (26).svg" alt="">
+                </form>
+            </nav>
         </header>
         <div class="playlist">
-            <section class="playlist__canciones">
-                <div class="playlist__canciones__canciones" id="container-song">
-                    
-                </div>
+<!--segundo paso
+<section class="playlist__canciones" id="container-song">-->
+            <section class="playlist__canciones" id="container-song">
             </section>
-            <section>
-                <div class="reproductor">
-                    <div class="reproductor__iconos">
-                        <img src="assets/img (27).svg" alt="">
-                        <img src="assets/img (28).svg" alt="">
-                        <img src="assets/img (29).svg" alt="">
-                        <img src="assets/img (30).svg" alt="">
-                        <img src="assets/img (31).svg" alt="">
-                    </div>
-                    <div class="reproductor__tituloyautor">
-                        <h2 class="reproductor__tituloyautor__titulo">Softcore</h2>
-                        <p class="reproductor__tituloyautor__autor">The Neighbourhood</p>
-                    </div>
-                    <img class="reproductor__imagen" src="assets/image.png" alt="">
+
+            <section class="reproductor">
+                <!-- cuarto paso 
+                 los id -->
+                <img class="reproductor__imagen" src="assets/image.png" alt="" id="imagen">
+                <div class="reproductor__tituloyautor">
+                    <h2 class="reproductor__tituloyautor__titulo" id="title-song">Softcore</h2>
+                    <p class="reproductor__tituloyautor__autor" id="author-song">The Neighbourhood</p>
                 </div>
+                <div class="reproductor__iconos">
+                    <img src="assets/img (27).svg" alt="">
+                    <img src="assets/img (28).svg" alt="">
+                    <img src="assets/img (29).svg" alt="">
+                    <img src="assets/img (30).svg" alt="">
+                    <img src="assets/img (31).svg" alt="">
+                </div>
+<!--tercer paso
+<audio src="" controls id="audio" autoplay></audio>
+-->
+                <audio src="" controls id="audio" autoplay></audio>
             </section>
         </div>
     </div>
 
     <script src="/script.js"></script>
 </body>
+
 </html>
