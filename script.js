@@ -95,5 +95,15 @@ axios.get('https://api.institutoalfa.org/api/songs')
     const songComponent = createSongComponent(song)
     contenedor.appendChild(songComponent)
 
+    
     })
+})
+document.getElementById('play').addEventListener('click', () => {
+    const audio = document.getElementById('audio')
+
+    if (audio.paused) {
+        audio.play()
+    } else {
+        audio.pause()
+    }
 })
