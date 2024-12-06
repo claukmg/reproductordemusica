@@ -29,20 +29,31 @@ console.log(usuario.direccion.avenida)
 */
 
 const createSongComponent = (song) => {
-    const div = document.createElement('div')
-    div.setAttribute('class', 'playlist__canciones__canciones__cancion')
+    const component = document.createElement('div')
+    component.setAttribute('class', 'playlist__canciones__canciones__cancion')
 
-    div.innerHTML = `
+    component.innerHTML = `
     <img class="playlist__canciones__canciones__cancion__foto" src="${song.image.url}" alt="">
-                        <div class="playlist__canciones__canciones__cancion__tituloyautor">
-                            <h2 class="playlist__canciones__canciones__cancion__tituloyautor__titulo">${song.title}</h2>
-                            <p class="playlist__canciones__canciones__cancion__tituloyautor__autor">${song.author}</p>
+    <div class="playlist__canciones__canciones__cancion__tituloyautor">
+        <h2 class="playlist__canciones__canciones__cancion__tituloyautor__titulo">${song.title}</h2>
+        <p class="playlist__canciones__canciones__cancion__tituloyautor__autor">${song.author}</p>
 
-                        </div>
+    </div>
     
     `
-    return div
+
+    setInteractiveComponent(component, song)
+    return component
     
+}
+
+const setInteractiveComponent = (component, song) => {
+    component.addEventListener('click', () => {
+        document.getElementById('audio').setAttribute('src', song.audio.url)
+        document.getElementById('imagen').setAttribute('src', song.image.url)
+        document.getElementById('title-song').innerHTML = song.title
+        document.getElementById('author-song').innerHTML = song.author
+    })
 }
 
 axios.get('https://api.institutoalfa.org/api/songs')
